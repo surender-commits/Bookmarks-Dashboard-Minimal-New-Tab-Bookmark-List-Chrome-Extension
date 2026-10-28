@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="hero">
+
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-greeting" id="greeting">Good morning</div>
+        <div class="hero-time">
+          <span id="clock-hm">--:--</span><span class="seconds" id="clock-s">:--</span>
+        </div>
+        <div class="hero-date" id="date-line"></div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-dot"></span>
+            <span id="bookmark-total">0</span>&nbsp;bookmarks
+          </div>
+          <div class="hero-stat">
+            <span
+              style="width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.15);display:inline-block;flex-shrink:0;"></span>
+            <span id="category-total">0</span>&nbsp;categories
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-middle">
+        <div class="search-box">
+          <span class="search-icon">&#9906;</span>
+          <input class="search-input" id="search" type="text" placeholder="Search bookmarks…" autocomplete="off"
+            spellcheck="false">
+          <span class="search-hint" id="search-hint">/</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="no-results" id="no-results">No bookmarks match your search.</div>
+
+
+  <div class="grid" id="grid"></div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
